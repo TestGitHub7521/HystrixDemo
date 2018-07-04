@@ -1,0 +1,9 @@
+applications:
+- name: hystrixDemo
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  routes:
+  - route: hystrixDemo-sample.cfapps.io
+  stack: cflinuxfs2
+  path: /target/hystrixDemo-0.0.1-SNAPSHOT.jar
